@@ -2,17 +2,17 @@ import org.example.Main;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-public class UnscientificTest {
-    private Main uncalculator;
+public class CalculatorVTest {
+    private Main vcalculator;
     @Before
     public void setUp() {
-        uncalculator = new Main();
+        vcalculator = new Main();
     }
     @Test
     public void test_squareRoot() {
         double val = 16.0;
         double expectedResult = 4.0;
-        double result = uncalculator.squareRoot(val);
+        double result = vcalculator.squareRoot(val);
         Assert.assertEquals(expectedResult, result, 0.0f);
     }
 
@@ -20,7 +20,7 @@ public class UnscientificTest {
     public void test_factorial() {
         int a = 5;
         int expectedResult = 120;
-        int result = uncalculator.factorial(a);
+        int result = vcalculator.factorial(a);
         Assert.assertEquals(expectedResult, result);
     }
 
@@ -28,7 +28,7 @@ public class UnscientificTest {
     public void test_naturalLog() {
         double a = 2.718;
         double expectedResult = 1.0;
-        double result = uncalculator.naturalLog(a);
+        double result = vcalculator.naturalLog(a);
         Assert.assertEquals(expectedResult, result, 0.2f);
     }
 
@@ -37,7 +37,7 @@ public class UnscientificTest {
         double a = 2.0;
         double b = 5.0;
         double expectedResult = 32.0;
-        double result = uncalculator.power(a,b);
+        double result = vcalculator.power(a,b);
         Assert.assertEquals(expectedResult, result, 0.0f);
     }
 }
