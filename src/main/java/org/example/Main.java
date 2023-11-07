@@ -14,7 +14,7 @@ public class Main {
         double num, exp;
         int numm;
 
-        do{
+        while(flag == 0){
             System.out.println("------------Calculator--------------");
             System.out.println("Choices of Operations:");
             System.out.println("");
@@ -70,7 +70,7 @@ public class Main {
                         flag = 1;
                 }
             }
-        }while(flag == 0);
+        }
     }
 
     public static double squareRoot(double num){
