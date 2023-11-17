@@ -11,8 +11,7 @@ public class Main {
     public static void main(String[] args) {
         logger.info("World's first V calculator");
         //some changes
-        //viva test
-        //viva test 2
+        //viva test a
         Scanner reader = new Scanner(System.in);
         int op, flag=0;
         double num, exp;
